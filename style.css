@@ -1,0 +1,287 @@
+@font-face {
+	font-family: 'Playwrite';
+	src: url('fonts/Playwrite_TZ_Guides/Inter_28pt-Regular.ttf');
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: Playwrite;
+	scroll-behavior: smooth;
+}
+.main-container {
+	background-color: rgb(61, 103, 243);
+	padding-top: 50px;
+}
+#aboutme, #myskills, #myworks, #contactme, #footer {
+	margin-top: 50px;
+}
+.container {
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+}
+#header .container{
+	border: 2px solid #fff;
+	align-items: center;
+	background-color: #6e13e6;
+	border-radius: 10px;
+}
+#header .container .image-div {
+	flex-basis: 40%;
+}
+#header .container .content {
+	flex-basis: 60%;
+	line-height: 25px;
+	text-align: center;
+}
+#header .container .image-div img {
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+#header .container .content h4,
+#header .container .content h1,
+#header .container .content p {
+	margin-bottom: 20px;
+}
+#header .container .content h4 {
+	letter-spacing: 5px;
+}
+.social-icons a {
+	margin-right: 15px;
+	font-size: 30px;
+}
+.social-icons .fa-facebook {
+	color: blue;
+}
+.social-icons .fa-snapchat {
+	color: yellow;
+}
+.social-icons .fa-instagram {
+	color: red;
+}
+
+/* About Me CSS */
+#aboutme .container {
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+}
+#aboutme .container > div {
+/*	border: 3px solid orange;*/
+	flex-basis: 50%;
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#aboutme .image-div img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	margin: auto;
+	display: block;
+	cursor: pointer;
+	transition: transform 1s, background-color 1s;
+}
+#aboutme .container .image-div img:hover {
+	transform: scale(1.3);
+}
+#aboutme .content h2 {
+	line-height: 40px;
+}
+#aboutme .container {
+	align-items: center;
+}
+
+/* My Skills */
+
+#myskills .container{
+	align-items: center;
+}
+#myskills .container > div {
+	flex-basis: 50%;
+}
+#myskills .image-div img {
+	width: 100%;
+	margin: auto;
+	display: block;
+	border-radius: 5px;
+}
+#myskills .content ul {
+	list-style-type: none;
+}
+#myskills .content ul li {
+	display: inline-block;
+	background-color: rgba(193, 183, 189, 0.6);
+	padding: 10px 15px;
+	margin: 5px 5px 5px 0;
+	border-radius: 5px;
+	font-weight: bold;
+
+}
+#myskills .content .title-2,
+#myskills .content .title-3 {
+	margin-top: 30px;
+}
+/*My Works CSS */
+#myworks .container .card {
+	flex-basis: 30%;
+	background-color: rebeccapurple;
+	border-radius: 5%;
+	padding: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: transform 1s, background-color 1s;
+}
+#myworks .container {
+	justify-content: space-between;
+}
+#myworks .card h3 {
+	margin: 20px 0;
+
+}
+#myworks {
+	margin: 50px;
+}
+#myworks .card:hover{
+	background-color: skyblue;
+	transform: scale(1.1);
+}
+
+/* Contact Me CSS */
+
+#contactme .container div {
+	flex-basis: 50%;
+}
+#contactme ul {
+	list-style-type: none;
+	line-height: 40px;
+	font-weight: bold;
+
+}
+#contactme .form .form-group {
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+#contactme .form .form-group input {
+	flex-basis: 49%;
+	height: 50px;
+	color: #000;
+}
+#contactme .form .textarea {
+	width: 100%;
+	height: 100px;
+	margin-bottom: 5px;
+	color: black;
+
+}
+#contactme .form input, 
+#contactme .form textarea,
+#contactme .form button{
+	border-radius: 7px;
+	border: none;
+	padding: 5px 10px;
+}
+#contactme .form button {
+	padding: 7px 30px;
+	float: right;
+	background-color:rgb(134, 41, 255);
+}
+
+/* Footer Section */
+#footer {
+	background-color:rgb(134, 41, 255);
+	padding: 30px 0 70px 0;
+}
+#footer .container{
+	/* border: 2px solid rgb(83, 236, 160); */
+	justify-content: space-between;
+}
+#footer .container .column {
+	flex-basis: 32%;
+	line-height: 35px;
+	text-align: center;
+}
+#footer .container .column ul {
+	list-style-type: none;
+}
+#footer .container .column ul li a {
+	text-decoration: none;
+}
+#footer .column h3 {
+	margin-bottom: 20px;
+}
+.box-shadow {
+	box-shadow: 3px 3px 8px black;
+}
+#gototop {
+	background-color: black;
+	display: block;
+	width: 45px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 25px;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+@media (max-width: 600px) {
+	#header .container {
+		flex-direction: column-reverse;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	#header .content {
+		padding: ;
+	}
+	#aboutme .container {
+		flex-direction: column;
+		text-align: center;
+	}
+	#aboutme .content {
+		padding: 20px;
+	}
+	#myskills .container {
+		flex-direction: column-reverse;
+	}
+	#myskills .content {
+		text-align: center;
+		padding: 20px;
+	}
+	#myworks .container {
+		flex-direction: column;
+	}
+	#myworks .card {
+		width: 90%;
+		margin: 10px auto;
+	}
+	#contactme .container {
+		flex-direction: column;
+	}
+	#contactme .form .form-group {
+		flex-direction: column;
+	}
+	#contactme .form .form-group input:first-child {
+		margin-bottom: 10px;
+	}
+	#footer .container {
+		flex-direction: column;
+	}
+	#footer .column {
+		margin: 20px 0;
+	}
+	#footer .column h3 {
+		margin-bottom: 20px;
+	}
+	#aboutme .container .image-div img:hover {
+		transform: scale(1);
+	}
+}
